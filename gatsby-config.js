@@ -9,6 +9,10 @@ module.exports = {
     siteUrl: `https://fudge.org/`,
     social: {
       twitter: `jaycuthrell`,
+      linkedin: `jaycuthrell`,
+      github: `jaycuthrell`,
+      homepage: `https://jaycuthrell.com`,
+      newsletter: `https://sunday.fudge.org`,
     },
   },
   plugins: [
