@@ -8,7 +8,7 @@ module.exports = {
     description: `The on again off again blog of Jay Cuthrell.`,
     siteUrl: `https://fudge.org/`,
     social: {
-      twitter: `jaycuthrell`,
+      twitter: `@jaycuthrell`,
       linkedin: `jaycuthrell`,
       github: `jaycuthrell`,
       homepage: `https://jaycuthrell.com`,

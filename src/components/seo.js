@@ -80,7 +80,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
 	{
 	  name: `twitter:image`,
-	  content: `https://jaycuthrell.com/images/jaycuthrell.jpg` || ``,
+	  content: `https://jaycuthrell.com/images/jaycuthrell.jpg`,
 	},
       ].concat(meta)}
     />
