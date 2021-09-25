@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `fudge.org by Jay Cuthrell`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jay Cuthrell`,
+      summary: `.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `The on again off again blog of Jay Cuthrell.`,
+    siteUrl: `https://fudge.org/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `jaycuthrell`,
     },
   },
   plugins: [
