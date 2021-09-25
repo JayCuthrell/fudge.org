@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://www.getrevue.co/profile/jaycuthrell/issues/fudge-sunday-issue-1-161193 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title dir="ltr">Fudge Sunday - Issue #1 | Revue</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Fudge Sunday - I&#39;m rebooting this newsletter for 2019. If you forgot you were on this list, there is probably a GDPR way to get off the list. Enjoy the first (13" name="description">
+<meta content="newsletter, email, digest, curation" name="keywords">
+<!--[if lt IE 9]>
+<script src="//d3jbm9h03wxzi9.cloudfront.net/assets/html5shiv-d3d35aa8c5c7074d41080b04f1324ad142a05add2f6e1e2ac7028b1eb3bece66.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="./index_files/application-a8360303a9833a31fcd9b897f3c7d2f234b7575569c8d4542c74c99d609b73a0.css">
+<script async="" src="./index_files/fbevents.js"></script><script async="" src="./index_files/analytics.js"></script><script type="text/javascript" async="" src="./index_files/mixpanel-2-latest.min.js"></script><script src="./index_files/application-c327454bd91e88677990c87573d4667c43f7c62663fb6f0e443441f2c1e4a0f9.js"></script>
+<script>
+  I18n.defaultLocale = "en";
+  I18n.locale = "en";
+</script>
+<link href="https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-84fc7f228d52c2410eb7aa839e279caeaa491588c7c75229ed33e1c7f69fe75d.ico" rel="icon" size="16x16">
+<link href="https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-84fc7f228d52c2410eb7aa839e279caeaa491588c7c75229ed33e1c7f69fe75d.ico" rel="icon" size="32x32">
+<link color="#E15718" href="https://d3jbm9h03wxzi9.cloudfront.net/assets/icon-86aa8f4b430a5b3e6fd4fd13627c73ae57364d7252b4120ebfa2a126c66d8c00.svg" rel="mask-icon">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="G0n8wLaj0sXnRMJC8eshtbNYh1yNc6ASS/xBr9wkYCHPFrUa3zIq4V0rJ1oPpGiL0r325n3q9287u+sBT/sRCA==">
+
+<script type="text/javascript">
+  function getQueryParam(url, param) {
+    // Expects a raw URL
+    param = param.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + param + "=([^&#]*)",
+    regex = new RegExp( regexS ),
+    results = regex.exec(url);
+    if (results === null || (results && typeof(results[1]) !== 'string' && results[1].length)) {
+      return '';
+    } else {
+      return decodeURIComponent(results[1]).replace(/\+/g, ' ');
+    }
+  };
+
+  function geUtmParams() {
+    var campaign_keywords = 'utm_source utm_medium utm_campaign utm_content utm_term'.split(' ')
+    , kw = ''
+    , params = {}
+    , first_params = {}
+    , result = {};
+
+    var index;
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(document.URL, campaign_keywords[index]);
+      if (kw.length) {
+        params[campaign_keywords[index] + ' [last touch]'] = kw;
+      }
+    }
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(document.URL, campaign_keywords[index]);
+      if (kw.length) {
+        first_params[campaign_keywords[index]] = kw;
+      }
+    };
+
+    result.first_params = first_params;
+    result.params = params;
+
+    return result;
+  }
+
+  function extractReferrer(referrer) {
+    campaign = geUtmParams().first_params["utm_campaign"];
+    ref = getQueryParam(document.URL, 'ref');
+
+    if(!campaign && !ref) {
+      if (/www\.getrevue\.co\/profile\/(.*?)\/issue/.test(window.location.href)) {
+        return 'Revue Profile Issue'
+      } else if(/www\.getrevue\.co\/profile/.test(window.location.href)) {
+        return 'Revue Profile'
+      }
+    }
+
+    if(!!campaign) {
+      return campaign;
+    } else if (referrer.search('https?://(.*)google.([^/?]*)') === 0) {
+      return 'Google';
+    } else if (referrer.search('https?://(.*)bing.([^/?]*)') === 0) {
+      return 'Bing';
+    } else if (referrer.search('https?://(.*)yahoo.([^/?]*)') === 0) {
+      return 'Yahoo';
+    } else if (referrer.search('https?://(.*)facebook.([^/?]*)') === 0) {
+      return 'Facebook';
+    } else if (referrer.search('https?://(.*)twitter.([^/?]*)') === 0 || referrer.search('https?://(.*)t.co/') === 0) {
+      return 'Twitter';
+    } else if (referrer.search('https?://(.*)linkedin.([^/?]*)') === 0) {
+      return 'LinkedIn'
+    } else if (referrer == '$direct' || (!referrer || /^\s*$/.test(referrer))) {
+      return '$direct';
+    } else if (referrer.search('https?://(.*)getrevue.co') == 0) {
+      if(/\/app\//.test(referrer)) {
+        return 'Revue App';
+      } else if (/\/profile\/(.*?)\/issue/.test(referrer)) {
+        return 'Revue Profile Issue'
+      } else if (/\/profile\//.test(referrer)) {
+        return 'Revue Profile'
+      } else if (/blog\.getrevue\.co/.test(referrer)) {
+        return 'Revue Blog'
+      } else {
+        return 'Revue Page'
+      }
+    } else if (referrer.search('https?://(.*)rev.vu([^/?]*)') === 0) {
+      return 'Revue Item';
+    } else if (!!ref) {
+      return ref;
+    } else {
+      tld = new RegExp('\.(asn\.au|com\.au|net\.au|id\.au|org\.au|edu\.au|gov\.au|csiro\.au|act\.au|nsw\.au|nt\.au|qld\.au|sa\.au|tas\.au|vic\.au|wa\.au|co\.at|or\.at|priv\.at|ac\.at|avocat\.fr|aeroport\.fr|veterinaire\.fr|co\.hu|film\.hu|lakas\.hu|ingatlan\.hu|sport\.hu|hotel\.hu|ac\.il|co\.il|org\.il|net\.il|k12\.il|gov\.il|muni\.il|idf\.il|ac\.za|gov\.za|law\.za|mil\.za|nom\.za|school\.za|net\.za|co\.uk|org\.uk|me\.uk|ltd\.uk|plc\.uk|net\.uk|sch\.uk|ac\.uk|gov\.uk|mod\.uk|nhs\.uk|police\.uk)')
+      a = document.createElement('a');
+      a.href = referrer;
+      ref = a.hostname;
+      if(tld.test(ref)) {
+        return ref.replace(tld, '').split('.').pop()
+      } else {
+        return ref.split('.').reverse()[1];
+      }
+    }
+  };
+
+  function getReferrer() {
+    ref = document.referrer;
+    return extractReferrer(ref);
+  }
+  
+  function mixpanelLoaded() {
+    try {
+      // Set ref
+      initial_ref = mixpanel.get_property('$initial_referrer');
+      mixpanel.register_once({"Source": extractReferrer(initial_ref)});
+      // mixpanel.people.set_once({"Source": extractReferrer(initial_ref)});
+      // mixpanel.people.set_once({"$created": new Date().toISOString()});
+
+      // Set distinct id
+      $('#member_distinct_id').val(mixpanel.get_distinct_id())
+    } catch(e) {}
+  };
+</script>
+<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("2087bc32dd14049d6de8a339112517d9", {loaded: mixpanelLoaded});</script>
+
+<script type="text/javascript">
+  var utm = geUtmParams();
+  mixpanel.register(utm.params);
+  // mixpanel.people.set(utm.params);
+  // mixpanel.people.set_once(utm.first_params);
+</script>
+<meta content="summary_large_image" property="twitter:card">
+<meta content="@getrevue" property="twitter:site">
+<meta content="@JayCuthrell" property="twitter:site">
+<meta content="1073732649320413" property="fb:app_id">
+<meta content="https://www.getrevue.co/profile/jaycuthrell/issues/fudge-sunday-issue-1-161193" property="og:url">
+<meta content="article" property="og:type">
+<meta content="Fudge Sunday - Issue #1" property="og:title">
+<meta content="I&#39;m rebooting this newsletter for 2019. If you forgot you were on this list, there is probably a GDPR way to get off the list. Enjoy the first (13?) installment of Fudge Sunday." property="og:description">
+<meta content="https://s3.amazonaws.com/revue/issue_images/images/000/056/872/original/issue_image_16119320190217-4-1670urmjpg?1550446945" property="twitter:image">
+<meta content="https://s3.amazonaws.com/revue/issue_images/images/000/056/872/original/issue_image_16119320190217-4-1670urmjpg?1550446945" property="og:image">
+<meta content="https://s3.amazonaws.com/revue/items/images/004/254/057/original/fudge-sunday.png?1550444785" property="og:image">
+<meta content="https://s3.amazonaws.com/revue/profile_covers/images/000/000/668/original/fudgesunday.png?1555458156" property="og:image">
+
+</head>
+<body class="profiles archive hasGoogleVoiceExt" data-page="ProfilesArchive" style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-58968534-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<style>
+  #profile-nav {border-color: #E15718 !important;}
+  #profile-nav.expanded svg {fill: #E15718 !important;}
+  #nav-back {color: #E15718 !important;}
+  #nav-back:after {border-color: #E15718 !important;}
+  #profile-logo {background-color: #E15718 !important;}
+  section.profile-form input[type="submit"] {background-color: #E15718 !important;}
+  section#premium a {color: #3498DB !important;}
+</style>
+<div id="profile-nav">
+<a id="nav-back" href="https://www.getrevue.co/profile/jaycuthrell">View profile</a>
+<a id="profile-logo" href="https://www.getrevue.co/?ref=Revue+Profile"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="basic" id="Layer_1" x="0px" y="0px" width="69px" height="28px" viewBox="0 0 69 28" xml:space="preserve">
+  <path d="M64.5293352,10.7041667 C65.0574432,10.6932778 65.3370748,10.9435278 65.3487341,11.5175278 C65.4141025,14.6482778 61.2060582,14.9296389 61.2060582,14.9296389 C61.4291136,13.3777778 62.6296371,10.7436389 64.5293352,10.7041667 L64.5293352,10.7041667 Z M67.1731247,18.3427222 C66.183615,19.4257778 64.9358809,20.2513889 63.5530139,20.2803611 C60.9010055,20.3353889 61.2215402,16.9429167 61.2215402,16.9429167 C61.2215402,16.9429167 68.9206787,17.2128056 68.8088643,11.8327222 C68.7618449,9.56880556 66.6052604,8.54427778 64.6474571,8.58491667 C60.6521468,8.66833333 57.2805125,12.3923333 57.3781828,17.0982778 C57.3877396,17.5509444 57.4292161,17.9754167 57.5007008,18.3722778 C56.9821496,19.0516667 56.0666094,20.0699722 55.2370803,20.0699722 C54.781795,20.0699722 54.6111108,19.6655278 54.6111108,19.2105278 C54.6111108,15.7544722 56.2048006,12.3516944 56.2048006,10.3425 C56.2048006,9.12255556 55.3743158,8.77313889 54.3454321,8.77313889 C53.0770554,8.77313889 52.3717645,9.60088889 52.3717645,9.60088889 C53.0636759,11.5056667 50.6058615,20.0699722 48.0218975,20.0699722 C47.4106454,20.0699722 47.3039917,19.5891111 47.3039917,19.1971111 C47.3039917,16.6306389 48.8831551,12.3316667 48.8831551,10.4099722 C48.8831551,9.13286111 48.0360416,8.75369444 47.0310499,8.75369444 C45.8419945,8.75369444 45.0539418,9.60088889 45.0539418,9.60088889 C45.9052604,11.2443333 43.6670609,17.5278056 43.6670609,19.3456667 C43.6670609,21.1633333 44.6720526,22.5985278 46.4427341,22.5985278 C49.3199003,22.5985278 50.9894709,18.98225 50.9894709,18.98225 C50.9894709,18.98225 50.6058615,22.5985278 54.0992493,22.5985278 C55.8911468,22.5985278 57.3170194,21.0725278 58.0666537,20.0585 C58.9885014,21.7876944 60.7930139,22.6360556 63.2355374,22.5855 C64.9924571,22.54875 66.2531884,22.0451389 67.2291274,21.1678056 C68.7343213,19.8129167 67.7318144,17.7308056 67.1731247,18.3427222 L67.1731247,18.3427222 Z" id="logo-3"></path>
+  <path d="M26.7737202,10.6613889 C27.2463989,10.6401944 27.5780194,10.8772222 27.6036316,11.4508333 C27.7467922,14.6338889 23.4097313,14.9679444 23.4097313,14.9679444 C23.595133,13.4112222 25.0563657,10.7385833 26.7737202,10.6613889 L26.7737202,10.6613889 Z M40.7751773,8.25183333 C39.5069917,8.25183333 38.5365956,9.352 38.5365956,10.5278056 C38.5365956,12.46525 40.1209197,12.5216389 40.0922493,14.0808889 C40.0631967,15.6401389 37.5797701,20.0656944 35.9027452,20.0656944 C35.2813629,20.0656944 35.1850305,19.4376389 35.1850305,19.1428611 C35.1850305,16.1589167 36.764385,11.9 36.764385,10.4646111 C36.764385,9.11166667 35.9434571,8.76633333 34.9608283,8.76633333 C33.6624432,8.76633333 32.9456842,9.59233333 32.9456842,9.59233333 C33.3958089,10.5264444 32.953903,12.7576944 32.4514072,14.90125 C31.5830776,17.3673889 28.768795,20.3318889 26.2513463,20.3453056 C22.962856,20.3620278 23.4431801,16.8923611 23.4431801,16.8923611 C23.4431801,16.8923611 31.1772964,17.0648333 30.9355097,11.6886389 C30.8334432,9.42666667 28.6531579,8.45425 26.6968837,8.54233333 C22.7048227,8.72180556 19.5250886,12.5216389 19.7366759,17.2235 C19.9035374,20.9350556 22.6740499,22.7052778 25.6234654,22.5730556 C28.2326593,22.4552222 30.1816704,21.2733889 31.5830776,19.8959444 C31.766759,21.4402222 32.7354349,22.5901667 34.5905983,22.5901667 C39.4282438,22.5901667 43.2540166,15.6076667 43.2540166,11.2779722 C43.2540166,9.69344444 42.4260166,8.25183333 40.7751773,8.25183333 L40.7751773,8.25183333 Z" id="logo-2"></path>
+  <path d="M28.5526205,23.9979444 C27.8781025,24.3351111 26.6978393,24.9295278 24.176759,24.9295278 C16.3352244,24.9295278 14.7163047,14.8510833 14.7163047,14.8510833 C14.7163047,14.8510833 20.6525983,12.3402222 20.6525983,7.24869444 C20.6525983,2.14919444 16.5122161,0 12.3303573,0 C7.68422992,0 2.5235651,2.50327778 0.296451524,7.35233333 C-1.10954294,10.4138611 2.93030194,11.3689722 3.13080332,10.4148333 C3.78850139,7.28272222 7.27940443,2.35063889 12.3638061,2.35063889 C15.0450582,2.35063889 16.6133269,4.12183333 16.6133269,7.24947222 C16.6133269,11.1274722 12.1436177,13.1708889 10.1611579,13.8335556 C11.0426759,9.77763889 11.3523158,8.55438889 11.3523158,7.83455556 C11.3523158,6.24166667 10.4319972,5.97605556 9.4931385,5.97605556 C8.35492521,5.97605556 7.53285042,6.81061111 7.53285042,6.81061111 C8.19054848,8.01188889 7.07985873,12.2853889 6.59685873,14.0175 C6.01179224,16.1165278 5.20539058,19.2188889 4.69945429,21.1909444 C4.19351801,23.1635833 7.71806094,22.6329444 7.95411357,22.0507778 C8.21138227,21.4172778 8.88800277,19.0950278 9.5005928,16.6561111 C10.5281385,16.3356667 11.706108,15.8806667 11.706108,15.8806667 C12.2212188,19.3026944 14.9691773,28 22.8107119,28 C29.5392632,28 29.1092078,23.7198889 28.5526205,23.9979444" id="logo-1"></path>
+</svg>
+</a></div>
+
+<article id="issue-holder">
+<section class="profile-form">
+<form class="new_member" id="new_member" action="https://www.getrevue.co/profile/jaycuthrell/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="G0n8wLaj0sXnRMJC8eshtbNYh1yNc6ASS/xBr9wkYCHPFrUa3zIq4V0rJ1oPpGiL0r325n3q9287u+sBT/sRCA=="><input type="hidden" name="member[distinct_id]" id="member_distinct_id">
+<div id="profile-form">
+<div id="profile-form-fields">
+<label for="member_email">Subscribe to our newsletter</label>
+<div class="input-group">
+<input class="form-control" placeholder="Your email address..." title="Subscribe to the newsletter of Fudge Sunday" type="email" name="member[email]" id="member_email">
+<div class="input-group-btn"><input type="submit" name="commit" value="Subscribe now" class="btn btn-primary" title="Subscribe to the newsletter of Fudge Sunday"></div>
+</div>
+<span class="error-message">
+
+
+</span>
+<div style="width: 1px; height: 1px; overflow: hidden;">
+<label for="confirm_CmXRh5">This thingy has to be empti pwieshh</label>
+<input type="text" name="confirm_CmXRh5" id="confirm_CmXRh5" autocomplete="off">
+</div>
+
+</div>
+</div>
+</form>
+</section>
+<script>
+  mixpanel.track('Profile viewed', {
+    'profile' : "Fudge Sunday",
+    'profile_id' : "21457",
+    'Last page': getReferrer()
+  }, function() {
+    mixpanel.register({"First time": false});
+  });
+</script>
+<script>
+  show_captcha = false;
+  var captchaCallback = function() {
+    $('#new_member').submit()
+  };
+</script>
+
+<section id="issue">
+<section id="issue-display">
+<header>
+<span class="issue-nr"></span>
+<time datetime="2019-02-17T17:42:23-06:00">Feb 17, 2019</time>
+<h1 title="Fudge Sunday - Fudge Sunday - Issue #1">Fudge Sunday - Issue #1</h1>
+</header>
+<div id="issue-frame">
+ 
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revue</title>
+  <style type="text/css">
+    #outlook a {padding:0;}
+    body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;} 
+    .ExternalClass {width:100%;}
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div, .ExternalClass blockquote {line-height: 100%;}
+    .ExternalClass p, .ExternalClass blockquote {margin-bottom: 0; margin: 0;}
+    #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+    
+    img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;} 
+    a img {border:none;} 
+    .image_fix {display:block;}
+
+    p {margin: 1em 0;}
+    .revue-p + .revue-p, .revue-p + .revue-blockquote {margin-top: 14px !important;}
+    .revue-p + .revue-h2 {margin-top: 28px !important;}
+    .revue-h2 {font-size: 20px; line-height: 28px; font-weight: 700;padding-bottom: 8px;}
+    
+
+    h1, h2, h3, h4, h5, h6 {color: black !important;}
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: black;}
+    h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {color: black;}
+    h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {color: black;}
+
+    table td {border-collapse: collapse;}
+    table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+    a {color: #3498db;}
+    p.domain a{color: black;}
+
+    hr {border: 0; background-color: #d8d8d8; margin: 0; margin-bottom: 0; height: 1px;}
+
+    @media screen and (max-width:600px) {
+      a[href^="tel"], a[href^="sms"] {
+        text-decoration: none;
+        color: blue;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: orange !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+
+      td[class="description-before"] {
+        padding-bottom: 28px !important;
+      }
+      td[class="description"] {
+        padding-bottom: 14px !important;
+      }
+      td[class="description"] span, [class="item-text"], [class="item-text"] span {
+        font-size: 16px !important;
+        line-height: 24px !important;
+      }
+
+      span[class="item-link-title"] {
+        font-size: 18px !important;
+        line-height: 24px !important;
+      }
+
+      [class="item-header"] {
+        font-size: 22px !important;
+      }
+
+      [class="item-link-description"], [class="item-link-description"] span {
+        font-size: 14px !important;
+        line-height: 22px !important;
+      }
+
+      img.item-image-large {
+        margin-bottom: 14px !important;
+      }
+
+      .link-image {
+        width: 84px !important;
+        height: 84px !important;
+      }
+
+      .link-image img {
+        max-width: 100% !important;
+        max-height: 100% !important;
+      }
+
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      a[href^="tel"], a[href^="sms"] {
+        text-decoration: none;
+        color: blue;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: orange !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+    }
+
+  </style>
+  <!--[if gte mso 9]>
+    <style type="text/css">
+      #contentTable {
+        width: 600px;
+      }
+    </style>
+  <![endif]-->
+
+
+<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable" style="margin:0; padding:0; width:100% !important; line-height: 100% !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" width="100%">
+  <tbody><tr>
+    <td width="10" valign="top">&nbsp;</td>
+    <td valign="top" align="center">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFF; border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+        <tr>
+          <td>
+      <![endif]-->
+      <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%; max-width: 600px; background-color: #FFF; border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" id="contentTable">
+        <tbody><tr>
+          <td width="600" valign="top" align="center" style="border-collapse:collapse;">
+            <div style="display:none;font-size:1px;color:#FFF;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">I'm rebooting this newsletter for 2019. If you forgot you were on this list, there is probably a GDPR</div>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="word-break: break-word;">
+<tbody><tr>
+<td align="center" style="padding-bottom: 28px;" valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td align="center" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px; color: #A7ADB5; text-decoration: none; padding-bottom: 8px;">February 17 · Issue #13 · <a target="_blank" style="color: #3498DB" href="https://www.getrevue.co/profile/jaycuthrell/issues/fudge-sunday-issue-1-161193?utm_campaign=Issue&amp;utm_content=view_in_browser&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">View online</a></td>
+</tr>
+<tr>
+<td align="center" style="padding-bottom: 56px;" valign="top">
+<a href="https://www.getrevue.co/profile/jaycuthrell?utm_campaign=Issue&amp;utm_content=profileimage&amp;utm_medium=email&amp;utm_source=Fudge+Sunday"><img alt="Fudge Sunday" style="display: block; width: 100%; border: 0; outline: none;" width="600" src="./index_files/fudgesunday.png">
+</a></td>
+</tr>
+<tr>
+<td align="left" class="description" style="padding-bottom: 28px;" valign="top">
+<span style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">I’m rebooting this newsletter for 2019. If you forgot you were on this list, there is probably a GDPR way to get off the list. Enjoy the first (13?) installment of Fudge Sunday.</div>
+</span>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding-bottom: 56px;" valign="top">
+<hr style="border: 0; background-color: #d8d8d8; margin: 0; margin-bottom: 0; height: 1px;">
+</td>
+</tr>
+<tr>
+<td align="center" style="padding-bottom: 42px;" valign="top">
+<img alt="via fudge.org (circa 1996?)" src="./index_files/fudge-sunday.png" style="display: block; width: 100%;">
+<div style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; text-align: center; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px; color: #666;">via fudge.org (circa 1996?)</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 28px;" valign="top">
+<div class="item-header" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 24px; line-height: 28px; margin: 0; margin-bottom: 0; color: #E15718;">Newsletters and podcasts galore</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">Since attempting a newsletter years ago, I’ve decided to try again. </div><div style="margin: 0;" class="revue-p">My last attempt turned in a dozen entries and I attempted to convert them (badly) into blog posts. But, they were not blog posts.</div><div style="margin: 0;" class="revue-p">Lately I’m listening to a smaller number of podcasts but the one podcast that has been consistent is a16z.</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://soundcloud.com/a16z?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/avatars-000073120599-46q7im-t500x500.jpg">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://soundcloud.com/a16z?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">a16z | Free Listening on SoundCloud</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://soundcloud.com/a16z?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">soundcloud.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/EAjGbd?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">Good stuff.</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">I also tried reading multiple newsletters. Everyone I listen to or read online eventually recommends Stratechery but I can’t seem to get into it. I tried the Stratechery podcast too – but, like the site and newsletter, I failed to get it. To each their own…</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://exponent.fm/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/Exponent-3-wp.png">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://exponent.fm/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">Exponent | A podcast about tech and society, hosted by Ben Thompson and James Allworth</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://exponent.fm/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">exponent.fm</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/OaNmWQ?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">YMMV.</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">Another writer with a regular newsletter is M.G. Siegler. His writing is consistently thought provoking and it’s also found on Revue.</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="http://newsletter.mgsiegler.com/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/mgblue2.png">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="http://newsletter.mgsiegler.com/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">First Draught | Revue</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="http://newsletter.mgsiegler.com/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">newsletter.mgsiegler.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/4KB2MG?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">Good stuff.</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 28px;" valign="top">
+<div class="item-header" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 24px; line-height: 28px; margin: 0; margin-bottom: 0; color: #E15718;">Blogging. 20 years later.</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">I blogged twice this year already and it wasn’t even a new years resolution.</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://jaycuthrell.com/twenty-years-of-blogging/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/1998.jpg">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://jaycuthrell.com/twenty-years-of-blogging/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">Twenty Years of Blogging ( 2018 ) – Jay Cuthrell's Home Page</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://jaycuthrell.com/twenty-years-of-blogging/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">jaycuthrell.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/yoWkvn?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">Looking back on the past 20 years of blogging</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">While I wasn’t blogging over the past 20 years, I was probably trying out just about every tool online. That included social networks – the successful ones and the other kind. Like… Google+ (plus?)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://jaycuthrell.com/google-nonplussed/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/google-nonplussed.png">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://jaycuthrell.com/google-nonplussed/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">Google Nonplussed ( 2019 ) – Jay Cuthrell's Home Page</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://jaycuthrell.com/google-nonplussed/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">jaycuthrell.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/AZRbE1?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">Lessons from a Googe+ data export</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">While me blogging heavily again may not become a trend, I’m planing to get a newsletter out each Sunday. That trend starts with this installment of the newsletter. Thanks for reading!</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 28px;" valign="top">
+<div class="item-header" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 24px; line-height: 28px; margin: 0; margin-bottom: 0; color: #E15718;">Dance and Technology</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">If you had told me that dance and technology could collide in the future, I would probably have assumed it was something relating to anti-gravity or bionics. Nope. It was a collision in the legal realm.</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">Back in 2015, the topic of dance choreography was playing out…</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://lawstreetmedia.com/issues/entertainment-and-culture/owns-dance-complexities-copyrighting-choreography/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/7105854203_273acf0abe_b-e1431533645735-400x242.jpg">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://lawstreetmedia.com/issues/entertainment-and-culture/owns-dance-complexities-copyrighting-choreography/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">Who Owns a Dance? The Complexities of Copyrighting Choreography - Law Street</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://lawstreetmedia.com/issues/entertainment-and-culture/owns-dance-complexities-copyrighting-choreography/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">lawstreetmedia.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/Glmv6v?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">What are the copyright rules when it comes to choreography? Who owns what dances, and how are they licensed?</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">Now, fast forward to 2019 and the world is almost turning into a scene out of “Looker” by Michael Crichton from the 1980s which is (no spoilers) literally the scenario of cutting the artist out of the cost equation.</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://www.imdb.com/title/tt0082677/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/MV5BZTY2OTk5OGYtOGUyNS00MWJlLTg3NWEtM2Y0NmFlZjE4YWE0XkEyXkFqcGdeQXVyMTQxNzMzNDI_._V1_UY1200_CR82_0_630_1200_AL_.jpg">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://www.imdb.com/title/tt0082677/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">Looker (1981) - IMDb</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://www.imdb.com/title/tt0082677/?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">www.imdb.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/bJPZKb?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">Waaaaay ahead of its time.</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">As it turns out, the kid I remembered dancing on a soda pop commercial with the king of pop is embroiled in a dystopian deleterious dance deliberation! </div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://www.polygon.com/fortnite/2018/12/18/18146770/backpack-kid-dance-fortnite-epic-games-lawsuit?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/backpack_kid_snl.jpg">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://www.polygon.com/fortnite/2018/12/18/18146770/backpack-kid-dance-fortnite-epic-games-lawsuit?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">Fortnite: Backpack Kid is suing Epic Games over Flossing dance - Polygon</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://www.polygon.com/fortnite/2018/12/18/18146770/backpack-kid-dance-fortnite-epic-games-lawsuit?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">www.polygon.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/R3Xy0J?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">I had to Google flossing. True story.</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">And…. scene?</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://www.techmeme.com/190215/p1?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#a190215p1"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/alfonso_ribeiro_serious_-_getty_-_h_2018.jpg">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://www.techmeme.com/190215/p1?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#a190215p1">Techmeme: US Copyright Office has refused a copyright claim for the “Carlton Dance”, a potential blow to performers seeking rights to dance emotes in games like Fortnite (Eriq Gardner/Hollywood Reporter)</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://www.techmeme.com/190215/p1?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter#a190215p1">www.techmeme.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/BoN6lD?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">The essential tech news of the moment. Technology’s news site of record. Not for dummies.</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 28px;" valign="top">
+<div class="item-header" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 24px; line-height: 28px; margin: 0; margin-bottom: 0; color: #E15718;">One Last Thing...</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<div class="item-text" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 28px;display: block; margin: 0; margin-bottom: 0;"><div style="margin: 0;" class="revue-p">Speaking of the 80s… here’s another dancing related video that has all the ingredients of similar dance moves captured in a novel format and uploaded to YouTube – which is also no stranger to legal debates.</div>
+</div>
+</td>
+</tr>
+<tr>
+<td align="left" style="padding-bottom: 42px;" valign="top">
+<a target="_blank" style="text-decoration: none;" href="https://www.youtube.com/watch?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter&amp;v=wjpAYfCFmJ4"><img width="112" height="112" style="padding-bottom: 24px;padding-left: 28px;" alt="" align="right" src="./index_files/hqdefault.jpg">
+</a><span class="item-link-title" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-weight: 600; font-size: 20px; line-height: 28px; margin: 0; margin-bottom: 0;"><a target="_blank" style="color: #3498DB; text-decoration: none;" href="https://www.youtube.com/watch?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter&amp;v=wjpAYfCFmJ4">John Fogerty - Vanz Kant Danz</a></span>
+<div class="domain" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; line-height: 24px; margin: 0; margin-bottom: 0; color: #A7ADB5; text-decoration: none !important;">
+<a target="_blank" style="color: #A7ADB5; text-decoration: none; text-transform: uppercase; font-size: 12px;" href="https://www.youtube.com/watch?utm_campaign=Fudge%20Sunday&amp;utm_medium=email&amp;utm_source=Revue%20newsletter&amp;v=wjpAYfCFmJ4">www.youtube.com</a>
+–
+<a target="_blank" style="color: #3498DB; font-size: 14px; text-decoration: none;" href="http://rev.vu/WR8q4j?utm_campaign=Issue&amp;utm_content=share&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">Share</a>
+</div>
+<div class="item-link-description" style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; display: block; margin: 0; margin-bottom: 0; margin-top: 4px;"><div style="margin: 0;" class="revue-p">Very 1980s.</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td align="center" style="padding: 20px 0; background-color: #FAFAFB;" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace:0pt; mso-table-rspace:0pt;" width="100%">
+<tbody><tr>
+<td align="right" valign="top" width="56%">
+<div style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-size: 16px; color: #666; line-height: 36px; margin: 0; margin-bottom: 0; text-align: right;">Did you enjoy this issue?</div>
+</td>
+<td align="left" style="padding-left: 10px;" valign="top" width="44%">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace:0pt; mso-table-rspace:0pt;" width="81">
+<tbody><tr>
+<td align="right" height="36" valign="top" width="41">
+<img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="41" height="36" alt="" src="./index_files/thumbs_up-1ae5a7bdfcd3220e2b376aa0c1607bc5edaba758e5dd83b482d03965219a220b.png">
+</td>
+<td align="left" height="36" valign="top" width="40">
+<img style="outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;border: 0;" width="40" height="36" alt="" src="./index_files/thumbs_down-e13779fa29e2935b47488fb8f82977fedcf689a0cc0cc3c19fa3c6bb14d1493b.png">
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding-top: 28px;" valign="top">
+<a target="_blank" style="border: 0; outline: none; text-decoration: none; -webkit-text-size-adjust:none;mso-hide:all;padding-right: 5px;" href="https://www.twitter.com/share?url=https://www.getrevue.co/profile/jaycuthrell/issues/fudge-sunday-issue-1-161193&amp;via=revue&amp;text=Fudge%20Sunday%20-%20Issue%20%231%20by%20%40JayCuthrell&amp;related=revue"><img alt="" width="28" height="28" src="./index_files/share_twitter-1d50bcd74851bdf7f9c51e5942c9ca4bef741c6a69c9380e53ea84ddf23936f6.png" hidden="" style="display: none !important;">
+</a><a target="_blank" style="border: 0; outline: none; text-decoration: none; -webkit-text-size-adjust:none; mso-hide:all;" href="http://www.facebook.com/sharer/sharer.php?u=https://www.getrevue.co/profile/jaycuthrell/issues/fudge-sunday-issue-1-161193"><img alt="" width="28" height="28" src="./index_files/share_facebook-de794f7bb7cf43d1d511fb0ffa88ae43436a3f09811ee338a7fa38b413fb659e.png" hidden="" style="display: none !important;">
+</a></td>
+</tr>
+<tr>
+<td align="center" style="padding-top: 56px;" valign="top">
+<div style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-size: 16px; color: #666; line-height: 28px; color: #999; margin: 0; margin-bottom: 0;">
+If you don't want these updates anymore, please unsubscribe <a style="color: #3498DB" href="https://www.getrevue.co/profile/jaycuthrell/issues/fudge-sunday-issue-1-161193#">here</a>.
+</div>
+<div style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-size: 16px; color: #666; line-height: 28px; color: #999; margin: 0; margin-bottom: 0;">
+If you were forwarded this newsletter and you like it, you can subscribe <a target="_blank" style="color: #3498DB" href="https://www.getrevue.co/profile/jaycuthrell?utm_campaign=Issue&amp;utm_content=forwarded&amp;utm_medium=email&amp;utm_source=Fudge+Sunday">here</a>.
+</div>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding: 8px 0 28px 0;" valign="top">
+<div style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-size: 16px; color: #666; line-height: 28px; color: #999; margin: 0; margin-bottom: 0;">Powered by <a target="_parent" style="color: #3498DB" href="https://www.getrevue.co/?utm_source=Fudge%20Sunday&amp;utm_medium=email&amp;utm_content=footerlink&amp;utm_campaign=Issue">Revue</a></div>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding-bottom: 56px;" valign="top">
+<div style="font-family: &quot;lato&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: block; font-size: 14px; line-height: 20px; color: #bbb; margin: 0; margin-bottom: 0;">2814 Brooks St, Suite 512, Missoula, MT, 59801</div>
+</td>
+</tr>
+</tbody></table>
+
+          </td>
+        </tr>
+      </tbody></table>
+      <!--[if (gte mso 9)|(IE)]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
+    </td>
+    <td width="10" valign="top">&nbsp;</td>
+  </tr>
+</tbody></table> 
+
+
+</div>
+</section>
+<section id="issue-share">
+<span class="share">Share</span>
+<a class="twitter" target="_blank" href="https://www.twitter.com/share?url=https://www.getrevue.co/profile/jaycuthrell/issues/fudge-sunday-issue-1-161193&amp;via=revue&amp;text=Fudge%20Sunday%20-%20Issue%20%231%20by%20%40JayCuthrell&amp;related=revue"><span class="icon-twitter"></span>
+<span class="name">Share to Twitter</span>
+</a><a class="facebook" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.getrevue.co/profile/jaycuthrell/issues/fudge-sunday-issue-1-161193"><span class="icon-facebook"></span>
+<span class="name">Share to Facebook</span>
+</a></section>
+</section>
+<section class="profile-form">
+<form class="new_member" id="new_member" action="https://www.getrevue.co/profile/jaycuthrell/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="G0n8wLaj0sXnRMJC8eshtbNYh1yNc6ASS/xBr9wkYCHPFrUa3zIq4V0rJ1oPpGiL0r325n3q9287u+sBT/sRCA=="><input type="hidden" name="member[distinct_id]" id="member_distinct_id">
+<div id="profile-form">
+<div id="profile-form-fields">
+<label for="member_email">Subscribe to our newsletter</label>
+<div class="input-group">
+<input class="form-control" placeholder="Your email address..." title="Subscribe to the newsletter of Fudge Sunday" type="email" name="member[email]" id="member_email">
+<div class="input-group-btn"><input type="submit" name="commit" value="Subscribe now" class="btn btn-primary" title="Subscribe to the newsletter of Fudge Sunday"></div>
+</div>
+<span class="error-message">
+
+
+</span>
+<div style="width: 1px; height: 1px; overflow: hidden;">
+<label for="confirm_gOfsRn">This thingy has to be empti pwieshh</label>
+<input type="text" name="confirm_gOfsRn" id="confirm_gOfsRn" autocomplete="off">
+</div>
+
+</div>
+</div>
+</form>
+</section>
+<script>
+  show_captcha = false;
+  var captchaCallback = function() {
+    $('#new_member').submit()
+  };
+</script>
+
+</article>
+<div class="container">
+<footer class="terms">
+<div class="footer-privacy">
+<a target="_blank" href="https://www.getrevue.co/privacy/platform?ref=Revue+Profile">Privacy policy</a>
+</div>
+<div class="footer-custom">
+</div>
+<div class="footer-powered">
+<a target="_blank" href="https://www.getrevue.co/?ref=Revue+Profile"><span>Powered by</span>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="basic" id="Layer_1" x="0px" y="0px" width="69px" height="28px" viewBox="0 0 69 28" xml:space="preserve">
+  <path d="M64.5293352,10.7041667 C65.0574432,10.6932778 65.3370748,10.9435278 65.3487341,11.5175278 C65.4141025,14.6482778 61.2060582,14.9296389 61.2060582,14.9296389 C61.4291136,13.3777778 62.6296371,10.7436389 64.5293352,10.7041667 L64.5293352,10.7041667 Z M67.1731247,18.3427222 C66.183615,19.4257778 64.9358809,20.2513889 63.5530139,20.2803611 C60.9010055,20.3353889 61.2215402,16.9429167 61.2215402,16.9429167 C61.2215402,16.9429167 68.9206787,17.2128056 68.8088643,11.8327222 C68.7618449,9.56880556 66.6052604,8.54427778 64.6474571,8.58491667 C60.6521468,8.66833333 57.2805125,12.3923333 57.3781828,17.0982778 C57.3877396,17.5509444 57.4292161,17.9754167 57.5007008,18.3722778 C56.9821496,19.0516667 56.0666094,20.0699722 55.2370803,20.0699722 C54.781795,20.0699722 54.6111108,19.6655278 54.6111108,19.2105278 C54.6111108,15.7544722 56.2048006,12.3516944 56.2048006,10.3425 C56.2048006,9.12255556 55.3743158,8.77313889 54.3454321,8.77313889 C53.0770554,8.77313889 52.3717645,9.60088889 52.3717645,9.60088889 C53.0636759,11.5056667 50.6058615,20.0699722 48.0218975,20.0699722 C47.4106454,20.0699722 47.3039917,19.5891111 47.3039917,19.1971111 C47.3039917,16.6306389 48.8831551,12.3316667 48.8831551,10.4099722 C48.8831551,9.13286111 48.0360416,8.75369444 47.0310499,8.75369444 C45.8419945,8.75369444 45.0539418,9.60088889 45.0539418,9.60088889 C45.9052604,11.2443333 43.6670609,17.5278056 43.6670609,19.3456667 C43.6670609,21.1633333 44.6720526,22.5985278 46.4427341,22.5985278 C49.3199003,22.5985278 50.9894709,18.98225 50.9894709,18.98225 C50.9894709,18.98225 50.6058615,22.5985278 54.0992493,22.5985278 C55.8911468,22.5985278 57.3170194,21.0725278 58.0666537,20.0585 C58.9885014,21.7876944 60.7930139,22.6360556 63.2355374,22.5855 C64.9924571,22.54875 66.2531884,22.0451389 67.2291274,21.1678056 C68.7343213,19.8129167 67.7318144,17.7308056 67.1731247,18.3427222 L67.1731247,18.3427222 Z" id="logo-3"></path>
+  <path d="M26.7737202,10.6613889 C27.2463989,10.6401944 27.5780194,10.8772222 27.6036316,11.4508333 C27.7467922,14.6338889 23.4097313,14.9679444 23.4097313,14.9679444 C23.595133,13.4112222 25.0563657,10.7385833 26.7737202,10.6613889 L26.7737202,10.6613889 Z M40.7751773,8.25183333 C39.5069917,8.25183333 38.5365956,9.352 38.5365956,10.5278056 C38.5365956,12.46525 40.1209197,12.5216389 40.0922493,14.0808889 C40.0631967,15.6401389 37.5797701,20.0656944 35.9027452,20.0656944 C35.2813629,20.0656944 35.1850305,19.4376389 35.1850305,19.1428611 C35.1850305,16.1589167 36.764385,11.9 36.764385,10.4646111 C36.764385,9.11166667 35.9434571,8.76633333 34.9608283,8.76633333 C33.6624432,8.76633333 32.9456842,9.59233333 32.9456842,9.59233333 C33.3958089,10.5264444 32.953903,12.7576944 32.4514072,14.90125 C31.5830776,17.3673889 28.768795,20.3318889 26.2513463,20.3453056 C22.962856,20.3620278 23.4431801,16.8923611 23.4431801,16.8923611 C23.4431801,16.8923611 31.1772964,17.0648333 30.9355097,11.6886389 C30.8334432,9.42666667 28.6531579,8.45425 26.6968837,8.54233333 C22.7048227,8.72180556 19.5250886,12.5216389 19.7366759,17.2235 C19.9035374,20.9350556 22.6740499,22.7052778 25.6234654,22.5730556 C28.2326593,22.4552222 30.1816704,21.2733889 31.5830776,19.8959444 C31.766759,21.4402222 32.7354349,22.5901667 34.5905983,22.5901667 C39.4282438,22.5901667 43.2540166,15.6076667 43.2540166,11.2779722 C43.2540166,9.69344444 42.4260166,8.25183333 40.7751773,8.25183333 L40.7751773,8.25183333 Z" id="logo-2"></path>
+  <path d="M28.5526205,23.9979444 C27.8781025,24.3351111 26.6978393,24.9295278 24.176759,24.9295278 C16.3352244,24.9295278 14.7163047,14.8510833 14.7163047,14.8510833 C14.7163047,14.8510833 20.6525983,12.3402222 20.6525983,7.24869444 C20.6525983,2.14919444 16.5122161,0 12.3303573,0 C7.68422992,0 2.5235651,2.50327778 0.296451524,7.35233333 C-1.10954294,10.4138611 2.93030194,11.3689722 3.13080332,10.4148333 C3.78850139,7.28272222 7.27940443,2.35063889 12.3638061,2.35063889 C15.0450582,2.35063889 16.6133269,4.12183333 16.6133269,7.24947222 C16.6133269,11.1274722 12.1436177,13.1708889 10.1611579,13.8335556 C11.0426759,9.77763889 11.3523158,8.55438889 11.3523158,7.83455556 C11.3523158,6.24166667 10.4319972,5.97605556 9.4931385,5.97605556 C8.35492521,5.97605556 7.53285042,6.81061111 7.53285042,6.81061111 C8.19054848,8.01188889 7.07985873,12.2853889 6.59685873,14.0175 C6.01179224,16.1165278 5.20539058,19.2188889 4.69945429,21.1909444 C4.19351801,23.1635833 7.71806094,22.6329444 7.95411357,22.0507778 C8.21138227,21.4172778 8.88800277,19.0950278 9.5005928,16.6561111 C10.5281385,16.3356667 11.706108,15.8806667 11.706108,15.8806667 C12.2212188,19.3026944 14.9691773,28 22.8107119,28 C29.5392632,28 29.1092078,23.7198889 28.5526205,23.9979444" id="logo-1"></path>
+</svg>
+</a></div>
+</footer>
+</div>
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
+  
+  fbq('init', '515202235309502');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+<img height='1' src='https://www.facebook.com/tr?id=515202235309502&amp;ev=PageView&amp;noscript=1' style='display:none' width='1'>
+</noscript>
+<script src="./index_files/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid('nuu2q', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nuu2q&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nuu2q&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+</noscript>
+
+
+<section id="subscribe-bar" class="in">
+<div id="subscribe-bar-form"><section class="profile-form">
+<form class="new_member" id="new_member" action="https://www.getrevue.co/profile/jaycuthrell/add_subscriber" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="G0n8wLaj0sXnRMJC8eshtbNYh1yNc6ASS/xBr9wkYCHPFrUa3zIq4V0rJ1oPpGiL0r325n3q9287u+sBT/sRCA=="><input type="hidden" name="member[distinct_id]" id="member_distinct_id">
+<div id="profile-form">
+<div id="profile-form-fields">
+<label for="member_email">Subscribe to our newsletter</label>
+<div class="input-group">
+<input class="form-control" placeholder="Your email address..." title="Subscribe to the newsletter of Fudge Sunday" type="email" name="member[email]" id="member_email">
+<div class="input-group-btn"><input type="submit" name="commit" value="Subscribe now" class="btn btn-primary" title="Subscribe to the newsletter of Fudge Sunday"></div>
+</div>
+<span class="error-message">
+
+
+</span>
+<div style="width: 1px; height: 1px; overflow: hidden;">
+<label for="confirm_4J3Cyp">This thingy has to be empti pwieshh</label>
+<input type="text" name="confirm_4J3Cyp" id="confirm_4J3Cyp" autocomplete="off">
+</div>
+
+</div>
+</div>
+</form>
+</section>
+<script>
+  show_captcha = false;
+  var captchaCallback = function() {
+    $('#new_member').submit()
+  };
+</script>
+</div>
+</section>
+
+
+
+</body></html>
