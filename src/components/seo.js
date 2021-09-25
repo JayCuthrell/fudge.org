@@ -20,6 +20,10 @@ const Seo = ({ description, lang, meta, title }) => {
             description
             social {
               twitter
+	      linkedin
+	      github
+	      homepage
+	      newsletter
             }
           }
         }
@@ -55,6 +59,10 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `https://jaycuthrell.com/images/jaycuthrell.jpg`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -70,6 +78,10 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+	{
+	  name: `twitter:image`,
+	  content: `https://jaycuthrell.com/images/jaycuthrell.jpg` || ``,
+	},
       ].concat(meta)}
     />
   )
