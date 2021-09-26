@@ -3,18 +3,22 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Hero from "../components/hero"
 import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
+  const image = post.frontmatter.image.childImageSharp.gatsbyImageData
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} image={image}>
       <Seo
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        description={post.frontmatter.description || post.excerpt
+	image={image}
+	}
       />
       <article
         className="blog-post"
@@ -25,6 +29,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
+	  <Hero />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"

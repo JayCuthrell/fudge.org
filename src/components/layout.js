@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import SiteLogo from "../components/sitelogo"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, image, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header

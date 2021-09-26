@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Hero from "../components/hero"
 import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
