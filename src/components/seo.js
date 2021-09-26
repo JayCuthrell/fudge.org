@@ -46,8 +46,16 @@ const Seo = ({ description, imagePath, lang, meta, title }) => {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
+          name: `author`,
+          content: `Jay Cuthrell <jay@cuthrell.com>`,
+        },
+        {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `date`,
+          content: `2021-09-26`,
         },
         {
           property: `og:title`,
