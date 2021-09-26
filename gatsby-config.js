@@ -16,6 +16,24 @@ module.exports = {
     },
   },
   plugins: [
+    {
+     resolve: `gatsby-plugin-google-gtag`,
+     options: {
+        trackingIds: [
+          "G-9V7H591PYS", // Google Analytics / GA
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+          send_page_view: true // default appears to be false.
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
+      },
+    }, 
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
