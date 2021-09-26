@@ -51,5 +51,3 @@ Luckily, [Faction](https://factioninc.com) has built a Cloud Data Services for M
 
 Did I mention [we're hiring](https://www.factioninc.com/about/careers/) too?
 
-<script src="https://boards.greenhouse.io/embed/job_board/js?for=faction"></script>
-
