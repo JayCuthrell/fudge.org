@@ -85,6 +85,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+	cover {
+	  childImageSharp {
+	    fixed(quality: 6, width: 600, height: 300) {
+	      src
+	    } 
+	  }
+	}
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
