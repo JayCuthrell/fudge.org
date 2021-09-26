@@ -67,3 +67,15 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# other stuff
+
+node_modules/
+public/
+.gatsby-context.js
+.DS_Store
+.intermediate-representation/
+.cache/
+yarn.lock
+yarn-error.log
+package-lock.json
