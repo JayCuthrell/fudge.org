@@ -54,7 +54,8 @@ const Seo = ({ description, imagePath, lang, meta, title }) => {
           content: metaDescription,
         },
         {
-          name: `date`,
+          name: `publish_date`,
+          property: `og:publish_date`,
           content: `2021-09-26`,
         },
         {
