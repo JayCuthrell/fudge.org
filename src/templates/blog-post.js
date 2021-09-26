@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
+import { getSrc } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -8,7 +10,8 @@ import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
-  const image = post.frontmatter.image.childImageSharp.gatsbyImageData
+  const image = post.frontmatter.cover.childImageSharp.gatsbyImageData
+  const imagePath = getSrc(post.frontmatter.cover) 
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
@@ -16,9 +19,8 @@ const BlogPostTemplate = ({ data, location }) => {
     <Layout location={location} title={siteTitle} image={image}>
       <Seo
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt
-	image={image}
-	}
+        description={post.frontmatter.description || post.excerpt}
+	image={imagePath}
       />
       <article
         className="blog-post"
@@ -29,7 +31,10 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-	  <Hero />
+	  <Hero 
+	    title={post.frontmatter.title}
+	    image={image}
+	  />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
@@ -92,9 +97,7 @@ export const pageQuery = graphql`
         description
 	cover {
 	  childImageSharp {
-	    fixed(quality: 6, width: 600, height: 300) {
-	      src
-	    } 
+	    gatsbyImageData(layout: FIXED) 
 	  }
 	}
       }

@@ -9,8 +9,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { getSrc } from "gatsby-plugin-image"
 
-const Seo = ({ description, lang, meta, title }) => {
+const Seo = ({ description, imagePath, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -33,12 +34,14 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const image = `https://fudge.org/preview.png` 
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
+      image={imagePath}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
@@ -60,7 +63,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: `https://jaycuthrell.com/images/jaycuthrell.jpg`,
+          content: image,
         },
         {
           name: `twitter:card`,
@@ -68,7 +71,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``,
+          content: site.siteMetadata?.social?.twitter || `@JayCuthrell`,
         },
         {
           name: `twitter:title`,
@@ -80,7 +83,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
 	{
 	  name: `twitter:image`,
-	  content: `https://jaycuthrell.com/images/jaycuthrell.jpg`,
+	  content: image,
 	},
       ].concat(meta)}
     />
@@ -91,6 +94,7 @@ Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  image: `https://fudge.org/preview.png`,
 }
 
 Seo.propTypes = {
@@ -98,6 +102,7 @@ Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 }
 
 export default Seo
