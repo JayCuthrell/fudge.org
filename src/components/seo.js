@@ -76,10 +76,14 @@ const Seo = ({ description, imagePath, lang, meta, title }) => {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
+          content: site.siteMetadata?.social?.twitter || `@JayCuthrell`,
+        },
+        {
+          name: `twitter:site`,
           content: site.siteMetadata?.social?.twitter || `@JayCuthrell`,
         },
         {
