@@ -8,6 +8,7 @@ description: A quick update on joining Faction and my thoughts on the rise of Cl
   Data Services for Multi-Cloud
 cover: 8288693980.jpg
 ---
+
 *The photo above is from a 2011 post on Twitter via Instagram (I think?). At the time, I was commenting that Cloud was now being used in conversations the way Broadband was back in 2000.*
 
 # So, a quick couple of updates...
@@ -50,4 +51,5 @@ Luckily, [Faction](https://factioninc.com) has built a Cloud Data Services for M
 
 Did I mention [we're hiring](https://www.factioninc.com/about/careers/) too?
 
-<iframe style="border: 1px; width: 100%; height: 900px; scrolling: yes;" src="https://app.trinethire.com/companies/5557-faction-inc/jobs/embed"></iframe>
+<script src="https://boards.greenhouse.io/embed/job_board/js?for=faction"></script>
+
