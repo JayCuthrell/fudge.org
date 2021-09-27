@@ -106,7 +106,7 @@ Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-  image: `https://fudge.org/preview.png`,
+  image: `/preview.png`,
 }
 
 Seo.propTypes = {
