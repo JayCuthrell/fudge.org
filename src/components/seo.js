@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import { getSrc } from "gatsby-plugin-image"
 
-const Seo = ({ description, imagePath, lang, meta, title }) => {
+const Seo = ({ image, description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -34,14 +34,13 @@ const Seo = ({ description, imagePath, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const image = `https://fudge.org/preview.png` 
+  const metaImage = image || `https://fudge.org/preview.png` 
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      image={imagePath}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
@@ -72,7 +71,7 @@ const Seo = ({ description, imagePath, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: image,
+          content: metaImage,
         },
         {
           name: `twitter:card`,
@@ -80,11 +79,11 @@ const Seo = ({ description, imagePath, lang, meta, title }) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || `@JayCuthrell`,
+          content: site.siteMetadata?.social?.twitter || `@qthrul`,
         },
         {
           name: `twitter:site`,
-          content: site.siteMetadata?.social?.twitter || `@JayCuthrell`,
+          content: site.siteMetadata?.social?.twitter || `@qthrul`,
         },
         {
           name: `twitter:title`,
@@ -96,7 +95,7 @@ const Seo = ({ description, imagePath, lang, meta, title }) => {
         },
 	{
 	  name: `twitter:image`,
-	  content: image,
+	  content: metaImage,
 	},
       ].concat(meta)}
     />
