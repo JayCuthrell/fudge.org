@@ -34,7 +34,7 @@ const Seo = ({ image, description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const metaImage = image || `https://fudge.org/preview.png` 
+  const metaImage = `https://fudge.org${image}` || `https://fudge.org/preview.png` 
 
   return (
     <Helmet
