@@ -14,7 +14,11 @@ Over the past few months I've been catching up with peers. Some are at their sam
 
 As a matter of fact, [I do](https://grnh.se/66f4d22d4us). However, it's myopic to think peers would want to apply ONLY for [where I happen to be gainfully employed](https://grnh.se/66f4d22d4us) or that their dream role already exists.
 
-That got me thinking about the question again. *Do I know anyone that is hiring?*
+(BTW – If you are reading this and you have a dream role in mind that's [not listed here](https://grnh.se/66f4d22d4us)... please [let me know](https://jaycuthrell.com/contact)!)
+
+That got me thinking about the question again. 
+
+*Do I know anyone else that is hiring?*
 
 # Applicant Tracking Systems and math
 
@@ -29,6 +33,10 @@ Easier said than done? Yes.
 Easy for me to say? Yes, and I absolutely acknowledge this fact.
 
 *I know this much but I am still ignorant. I am the default recipient of a societal system that compounds historic patterns, unchallenged norms, conscious biases, and outright predjudices that continuously benefit me in terms of access to opportunity in both stark ways as well as unseen signals that I may never fully fathom, accurately quantify, or ever justify.*
+
+(BTW – If you are reading this and you have suggestions for my fact encapsuplation above or suggestions on being a better example of allyship... please [let me know](https://jaycuthrell.com/contact)!)
+
+Perhaps finding the where, what, and who is hiring might be possible by using a social network. Severeal peers have shared anecdotes of how Twitter or LinkedIn got the right person talking to them that resulted in learning what roles where open where that turned into a new job.
 
 # LinkedIn searches
 
@@ -84,3 +92,10 @@ The folks at GV are smart but they do not appear to have invested in... well... 
 ![GV](gv.png)
 
 [Imagine](https://www.gv.com/portfolio/) if they did.
+
+## Growing this list...
+
+If you are reading this and you have suggestions or corrections... or if you have thoughts on this topic...
+
+[Please let me know](https://jaycuthrell.com/contact)!
+
