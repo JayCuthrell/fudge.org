@@ -36,7 +36,7 @@ Easier said than done? Yes.
 
 Easy for me to say? Yes, and I absolutely acknowledge this fact.
 
-*I know this much but I am still ignorant. I am the default recipient of a societal system that compounds historic patterns, unchallenged norms, conscious biases, and outright predjudices that continuously benefit me in terms of access to opportunity in both stark ways as well as unseen signals that I may never fully fathom, accurately quantify, or ever justify.*
+*I know this much but I am still ignorant. I am the default recipient of a societal system that compounds historic patterns, unchallenged norms, (un)conscious biases, and outright predjudices that continuously benefit me in terms of access to opportunity in both stark ways as well as unseen signals that I may never fully fathom, accurately quantify, or ever justify.*
 
 (BTW – If you are reading this and you have suggestions for my fact encapsuplation above or suggestions on being a better example of allyship... please [let me know](https://jaycuthrell.com/contact)!)
 
