@@ -8,11 +8,11 @@ cover: 7055427527_ac0bd20456_o.png
 ---
 Happy New Year! 
 
-The past few months I've been catching up with peers. Some are at their same companies, others were just starting new roles, and a few asked me a simple question as they are looking for something new in their career.
+Over the past few months I've been catching up with peers. Some are at their same companies, others were just starting new roles, and a few asked me a simple question as they are looking for something new in their career.
 
 > Do you know anyone that is hiring?
 
-As a matter of fact, [I do](https://factioninc.com/careers). However, it's myopic to think peers would want to apply ONLY for where I happen to be gainfully employed or that their dream role already exists.
+As a matter of fact, [I do](https://grnh.se/66f4d22d4us). However, it's myopic to think peers would want to apply ONLY for [where I happen to be gainfully employed](https://grnh.se/66f4d22d4us) or that their dream role already exists.
 
 That got me thinking about the question again. *Do I know anyone that is hiring?*
 
@@ -57,7 +57,9 @@ Surely there are some smart folks that have already chased this topic? It turns 
 
 ## Dell Technologies Capital
 
-Currently, I'm working a portfolio company of Dell Technologies Capital (DTC). As you might expect, the DTC folks are pretty smart. 
+Currently, I'm working a portfolio company of Dell Technologies Capital (DTC). As you might expect, the DTC folks are pretty smart.
+
+![DTC](dtc.png)
 
 DTC took the time to invest in an aggregate job site for their portfolio companies that is powered by [Getro](https://www.getro.com/getro-jobs/)
 
@@ -69,12 +71,16 @@ The thinking would be that after 10 years with Dell Technologies through concurr
 
 The folks at a16z are smart too.
 
+![a16z](a16z.png)
+
 a16z took the time to invest in using [Consider](https://product.consider.com/ctc/talent-circle)
 
 <https://portfoliojobs.a16z.com/jobs>
 
 ## GV
 
-The folks at GV are smart too.
+The folks at GV are smart but they do not appear to have invested in... well... portfolio company job lists.
 
-However, they do not appear to have invested in... well... portfolio company job lists.
+![GV](gv.png)
+
+[Imagine](https://www.gv.com/portfolio/) if they did.
