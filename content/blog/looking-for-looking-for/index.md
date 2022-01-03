@@ -12,13 +12,17 @@ Over the past few months I've been catching up with peers. Some are at their sam
 
 > Do you know anyone that is hiring?
 
-As a matter of fact, [I do](https://grnh.se/66f4d22d4us). However, it's myopic to think peers would want to apply ONLY for [where I happen to be gainfully employed](https://grnh.se/66f4d22d4us) or that their dream role already exists.
+As a matter of fact, [I do](https://grnh.se/66f4d22d4us).
+
+[![Faction is hiring!](faction.png)](https://grnh.se/66f4d22d4us)
+
+ However, it's myopic to think peers would want to apply ONLY for [where I happen to be gainfully employed](https://grnh.se/66f4d22d4us) or that their dream role already exists.
 
 (BTW – If you are reading this and you have a dream role in mind that's [not listed here](https://grnh.se/66f4d22d4us)... please [let me know](https://jaycuthrell.com/contact)!)
 
-That got me thinking about the question again. 
+That got me thinking about the question again – this time less selfishly.
 
-*Do I know anyone else that is hiring?*
+> *Do I know anyone else that is hiring?*
 
 # Applicant Tracking Systems and math
 
@@ -65,25 +69,29 @@ Surely there are some smart folks that have already chased this topic? It turns 
 
 ## Dell Technologies Capital
 
-Currently, I'm working a portfolio company of Dell Technologies Capital (DTC). As you might expect, the DTC folks are pretty smart.
+Currently, I'm working at [Faction](https://grnh.se/66f4d22d4us) which is a portfolio company of Dell Technologies Capital (DTC). The thinking would be that after 10 years with Dell Technologies through concurrent nested mergers I might know someone that knows someone.
 
-![DTC](dtc.png)
+As you might expect, the DTC folks are pretty smart.
+
+[![DTC](dtc.png)](https://careers.delltechnologiescapital.com)
 
 DTC took the time to invest in an aggregate job site for their portfolio companies that is powered by [Getro](https://www.getro.com/getro-jobs/)
 
 <https://careers.delltechnologiescapital.com>
 
-The thinking would be that after 10 years with Dell Technologies through concurrent nested mergers I might know someone that knows someone.
+But what about other VC firms?
 
 ## a16z
 
 The folks at a16z are smart too.
 
-![a16z](a16z.png)
+[![a16z](a16z.png)](https://portfoliojobs.a16z.com/jobs)
 
 a16z took the time to invest in using [Consider](https://product.consider.com/ctc/talent-circle)
 
 <https://portfoliojobs.a16z.com/jobs>
+
+And the VC search continues...
 
 ## GV
 
