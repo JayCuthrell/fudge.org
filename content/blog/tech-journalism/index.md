@@ -7,11 +7,9 @@ cover: 6976375391.jpg
 date: 2012-04-23 
 ---
 
-Update: [Dilbert cartoon summary] [1]
-
 One of the things I notice when attending technology events is the ability of the tech blog ecosystem to crank out coverage even before the event is over. Tech blog posts appear before the coffee carts are removed. Conclusions and predictions are posted at the speed of light. 
 
-[Fascinating.] [4]
+Fascinating.
 
 Indeed, these are long tech blog posts that say what folks must be thinking. There are fully worked out scenarios outlining explicit details and actions that must be taken by companies and their leaders per the social contract of the development community. Yes, these long tech blog posts are the blueprints for the solution.
 
@@ -21,14 +19,14 @@ Fascinating.
 
 As such, I’m starting to recommend that folks disconnect from any tech blog that uses the following conventions in any post. 
 
-- [horse race metaphor] [2]
+- [horse race metaphor] [1]
 - physical violence metaphor
 - hyperbole (all of it)
 - all internal links
 - war references (any and all of them)
-- [blatant refusal to use proper terminology] [3]
+- [blatant refusal to use proper terminology] [2]
 - consistent rivalry references
-- [catering to irrational fears] [5]
+- [catering to irrational fears] [4]
 - writing about writing about writing (potentially about writing)
 
 But I like reading the tabloids
@@ -55,10 +53,9 @@ Friday: Determine what your favorite is, find out who the top 10 committers are,
 
 Remember, this A/B experiment is our little secret.
 
-Perhaps, just like the rise of meta summary curating services, there will be a community scale expansion that buries things not worthy of being read by folks regardless of where it is published or the SEO melange that pushes it to the top spot of seemingly arbitrary lists.
+Perhaps, just like the rise of meta summary curating services, there will be a community scale expansion that buries things not worthy of being read by folks regardless of where it is [published] [3] or the SEO melange that pushes it to the top spot of seemingly arbitrary lists.
 
-[1]: http://www.dilbert.com/strips/comic/2013-01-04/
-[2]: http://wattersjames.com/2013/04/07/why-emerging-technologies-are-nothing-like-sports-scores/
-[3]: https://medium.com/@dannypage/stop-using-google-trends-a5014dd32588
-[4]: https://xkcd.com/1227/
-[5]: https://hunterwalk.com/2020/02/15/whats-wrong-with-tech-folks-who-attack-the-tech-media-and-whats-wrong-with-tech-media-today/
+[1]: http://wattersjames.com/2013/04/07/why-emerging-technologies-are-nothing-like-sports-scores/
+[2]: https://medium.com/@dannypage/stop-using-google-trends-a5014dd32588
+[3]: https://xkcd.com/1227/
+[4]: https://hunterwalk.com/2020/02/15/whats-wrong-with-tech-folks-who-attack-the-tech-media-and-whats-wrong-with-tech-media-today/
