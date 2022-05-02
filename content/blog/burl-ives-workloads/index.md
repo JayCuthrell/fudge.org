@@ -33,4 +33,4 @@ Porting aside, I'd argue there are ["Burl Ives" workloads that will not get clou
 
 It does not preclude placement within some variety of [ultra generalized x86 basis cloud](http://www.intel.com/content/www/us/en/architecture-and-technology/many-integrated-core/intel-many-integrated-core-architecture.html) (today) . It's simply a question of how well it runs as measured against these concerns. 
 
-Shops running "Burl Ives" workloads will never stop asking if it is permissible to get more cloudy. If it means enduring the legacy for [another few seasons of market innovations](http://www.dilbert.com/strips/comic/1995-06-24/) to get there so be it. 
+Shops running "Burl Ives" workloads will never stop asking if it is permissible to get more cloudy. If it means enduring the legacy for another few seasons of market innovations to get there so be it. 
