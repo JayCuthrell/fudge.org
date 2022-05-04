@@ -18,20 +18,14 @@ Next, I started looking around on GitHub for inspiration.
 Little Big Data
 ===============
 
-A few years ago I did a big data presentation. There is even a video of it.
-
-<iframe width="320" height="180" src="https://www.youtube.com/embed/lkREZ0mhHcA"
-frameborder="0" allowfullscreen></iframe>
+A few years ago I did a big data presentation. There was even a video of it. _(Update: the video appears to be private as of 2022)_
 
 At the time, I had downloaded some R examples to run against my Twitter archives.
 
 Why archives? I tweet(ed) a lot. So, [the limitations on web
 access](https://dev.twitter.com/rest/public/rate-limits) applied.
 
-I included some of these references in the presentation.
-
-<script
-src="https://gist.github.com/JayCuthrell/8bcd9597d37a8602c639.js"></script>
+I included [some of these references in the presentation](https://gist.github.com/JayCuthrell/8bcd9597d37a8602c639).
 
 Trends: @Qthrul
 ===============
