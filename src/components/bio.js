@@ -19,11 +19,11 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
-	    linkedin
-	    github
-	    homepage
 	    newsletter 
+	    github
+	    linkedin
+            twitter
+	    homepage
           }
         }
       }
@@ -51,20 +51,20 @@ const Bio = () => {
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
             You can follow along in the usual places: 
-          [<a href={`https://twitter.com/${social?.twitter || ``}`}>
-            Twitter
-          </a>]
-          [<a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
-            LinkedIn 
+          [<a href={`${social?.newsletter || ``}`}>
+            Newsletter
           </a>]
           [<a href={`https://github.com/${social?.github || ``}`}>
             GitHub
           </a>]
+          [<a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
+            LinkedIn 
+          </a>]
+          [<a href={`https://twitter.com/${social?.twitter || ``}`}>
+            Twitter
+          </a>]
           [<a href={`${social?.homepage || ``}`}>
             Homepage
-          </a>]
-          [<a href={`${social?.newsletter || ``}`}>
-            Newsletter
           </a>]
         </p>
       )}
