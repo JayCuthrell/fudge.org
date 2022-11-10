@@ -22,7 +22,6 @@ const Bio = () => {
 	    newsletter 
 	    github
 	    linkedin
-            twitter
 	    homepage
           }
         }
@@ -59,9 +58,6 @@ const Bio = () => {
           </a>]
           [<a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
             LinkedIn 
-          </a>]
-          [<a href={`https://twitter.com/${social?.twitter || ``}`}>
-            Twitter
           </a>]
           [<a href={`${social?.homepage || ``}`}>
             Homepage
